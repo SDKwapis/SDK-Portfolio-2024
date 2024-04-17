@@ -29,7 +29,7 @@ header {
     font-family: minecraft, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 50px;
     color: white;
-    background-color: #231f20;
+    background-color: black;
 }
 
 button{
@@ -38,12 +38,12 @@ button{
     font-family: minecraft, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 50px;
     color: white;
-    background-color: #231f20;
-    border: #231f20;
+    background-color: black;
+    border: black;
 }
 
 button:hover {
-    background-color: #9b9b9b;
+    background-color:dodgerblue;
     color: #fff;
   }
   
@@ -58,15 +58,33 @@ button:hover {
 
 }
 
-@media screen and (max-width: 768px){
+.img2 {
+  display: block;
+  float: left;
+  margin-right: 20px;
+  height: 300px;
+}
+
+
+.card {
+  height: 390px;
+  width: 600px;
+  margin: 20px;
+  padding: 40px;
+  background-color: #b0afaf;
+  box-shadow: 5px 5px 10px black;
+  border:  10px outset;
+}
+
+@media screen and (max-width: 780px){
 
     header, nav {
       display: flex;
       padding-top: 5%;
       flex-direction: column;
       align-items: center;
-      height:350px;
-      widht:auto;
+      height:380px;
+      width:auto;
     }
     .img1 {
         height: 40%;
