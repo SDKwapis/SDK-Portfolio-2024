@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #2d69a8;
+}
+
+nav {
+    display: inline-block;
+    align-items: right;
+    float: right;
+
+  }
+
+@font-face {
+    font-family: minecraft;
+    src: url(Minecraft.ttf);
+  }
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 250px;
+    font-family: minecraft, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 50px;
+    color: white;
+    background-color: #231f20;
+}
+
+button{
+    width: fit-content;
+    height: fit-content;
+    font-family: minecraft, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 50px;
+    color: white;
+    background-color: #231f20;
+    border: #231f20;
+}
+
+button:hover {
+    background-color: #9b9b9b;
+    color: #fff;
+  }
+  
+  button:active {
+    font-size: 80%;
+  }
+  
+.img1 {
+    display: block;
+    float: left;
+    height: 90%;
+
+}
+
+@media screen and (max-width: 768px){
+
+    header, nav {
+      display: flex;
+      padding-top: 5%;
+      flex-direction: column;
+      align-items: center;
+      height:350px;
+      widht:auto;
+    }
+    .img1 {
+        height: 40%;
+    }    
+}
