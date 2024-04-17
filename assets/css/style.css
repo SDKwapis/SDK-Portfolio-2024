@@ -14,10 +14,19 @@ nav {
     float: right;
 
   }
+  h1 {
+    font-family: minecraft, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: xx-large;
+  }
 
 @font-face {
     font-family: minecraft;
     src: url(Minecraft.ttf);
+  }
+
+  @font-face {
+    font-family: minecrafter;
+    src: url('Minecrafter.Reg.ttf');
   }
 
 header {
@@ -67,8 +76,9 @@ button:hover {
 
 
 .card {
+  display: block;
   height: 390px;
-  width: 600px;
+  width: auto;
   margin: 20px;
   padding: 40px;
   background-color: #b0afaf;
@@ -89,4 +99,17 @@ button:hover {
     .img1 {
         height: 40%;
     }    
+    .img2 {
+      height: 200px;
+  }   
+    .card {
+      display: block;
+      height: fit-content;
+      width: fit-content;
+      margin: 20px;
+      padding: 40px;
+      background-color: #b0afaf;
+      box-shadow: 5px 5px 10px black;
+      border:  10px outset;
+    }
 }
