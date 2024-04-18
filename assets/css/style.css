@@ -6,6 +6,20 @@
 
 body {
     background-color: #2d69a8;
+    margin: 0;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+aside {
+  flex: 1;
+  background-color: rgb(133, 191, 248);
+  margin-right: 20px;
+  padding: 20px;
+  text-align: center;
 }
 
 nav {
@@ -14,9 +28,17 @@ nav {
     float: right;
 
   }
+  
   h1 {
     font-family: minecraft, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: xx-large;
+  }
+
+  h2 {
+    font-family: minecraft, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: xx-large;
+    padding: 10px;
+    text-align: center;
   }
 
 @font-face {
@@ -24,12 +46,7 @@ nav {
     src: url(Minecraft.ttf);
   }
 
-  @font-face {
-    font-family: minecrafter;
-    src: url('Minecrafter.Reg.ttf');
-  }
-
-header {
+  header {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -41,7 +58,18 @@ header {
     background-color: black;
 }
 
-button{
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 80px;
+  font-family: minecraft, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 20px;
+  color: white;
+  background-color: black;
+}
+
+button {
     width: fit-content;
     height: fit-content;
     font-family: minecraft, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -52,64 +80,46 @@ button{
 }
 
 button:hover {
-    background-color:dodgerblue;
+    background-color:rgb(133, 191, 248);
     color: #fff;
   }
   
-  button:active {
+button:active {
     font-size: 80%;
   }
   
 .img1 {
-    display: block;
     float: left;
     height: 90%;
-
 }
 
 .img2 {
-  display: block;
-  float: left;
-  margin-right: 20px;
   height: 300px;
 }
 
+.projects {
+    flex: 4;
+    background-color: #2d69a8;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
 .card {
-  display: block;
-  height: 390px;
+  height: auto;
   width: auto;
   margin: 20px;
   padding: 40px;
   background-color: #b0afaf;
   box-shadow: 5px 5px 10px black;
   border:  10px outset;
+  flex: 1 0 400px;
 }
 
-@media screen and (max-width: 780px){
-
-    header, nav {
-      display: flex;
-      padding-top: 5%;
-      flex-direction: column;
-      align-items: center;
-      height:380px;
-      width:auto;
-    }
-    .img1 {
-        height: 40%;
-    }    
-    .img2 {
-      height: 200px;
-  }   
-    .card {
-      display: block;
-      height: fit-content;
-      width: fit-content;
-      margin: 20px;
-      padding: 40px;
-      background-color: #b0afaf;
-      box-shadow: 5px 5px 10px black;
-      border:  10px outset;
-    }
+@media screen and (max-width: 768px) {
+  main,
+  nav, {
+    flex-direction: column;
+  }
 }
